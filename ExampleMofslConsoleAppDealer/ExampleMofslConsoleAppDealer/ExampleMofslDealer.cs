@@ -1,8 +1,9 @@
 ﻿
 
 /*Add all dll to your reference to your application
- * .Net framework 4.7.1 or Newer version --install-package System.Management -Version 6.0.0
-   install Newtonsoft.Json latest
+ * .Net Framework 4.7.1 or Newer version
+ *  system.Management version 6.0 or newer version-- install-package System.Management -Version 6.0.0
+ * install Newtonsoft.Json latest
  */
 
 
@@ -43,7 +44,7 @@ namespace ExampleMofslConsoleAppDealer
          //   CMOFSLOPENAPI m_objconnect = new CMOFSLOPENAPI(ApiKey, "Desktop");
 
             //Enter base url 
-            string Base_Url = "https://uatopenapi.motilaloswal.com";
+            string Base_Url = "https://openapi.motilaloswaluat.com";
             m_objconnect.SetApiUrl(Base_Url);
 
             //Login by Clientcode and password
