@@ -35,7 +35,7 @@ namespace TestMofslWebSocket
             string PanNoOrDob = ""; //client PAN no or Date of Birth --18/10/1998
 
             //set base url 
-            string Base_Url = "https://openapi.motilaloswal.com";
+            string Base_Url = "https://openapi.motilaloswaluat.com";
 
             string BrowserName = "firebox";
             string BrowserVersion = "104.0.2";
@@ -46,6 +46,7 @@ namespace TestMofslWebSocket
 
 
 
+            m_objconnect.SetApiUrl(Base_Url);   
 
             string TOTP = "";
             //Login by Clientcode and password
