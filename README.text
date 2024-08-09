@@ -1,4 +1,4 @@
-Implementation guide sdkversion DotNET 1.7  Release - 14/03/2024
+Implementation guide sdkversion DotNET 1.9  Release - 31/07/2024
 
 1. Install required packages 
 	Install All require package see example file
@@ -17,7 +17,7 @@ Implementation guide sdkversion DotNET 1.7  Release - 14/03/2024
 	1. For live 
 	   Base_Url = "https://openapi.motilaloswal.com"
 	2. For UAT
-	   Base_Url = "https://uatopenapi.motilaloswal.com"
+	   Base_Url = "https://openapi.motilaloswaluat.com"
 
 5. Initialize MofslOpenApi
 	Initialize MofslOpenApi using Apikey and Base_Url
