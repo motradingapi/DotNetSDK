@@ -37,7 +37,7 @@ namespace ExampleMofslConsoleApp
             //in case of Desktop-- CMOFSLOPENAPI m_objconnect = new CMOFSLOPENAPI(ApiKey, "Desktop");
 
             //Enter base url 
-            string Base_Url = "https://uatopenapi.motilaloswal.com";
+            string Base_Url = "https://openapi.motilaloswaluat.com";
 
             m_objconnect.SetApiUrl(Base_Url);
 
