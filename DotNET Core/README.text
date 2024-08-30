@@ -1,0 +1,29 @@
+Implementation guide sdkversion DotNET 2.1  Release - 29/08/2024
+
+1. Install required packages 
+	Install All require package see example file
+	
+2. ApiKey
+	ApiKey will be obtain from website 
+
+3. userid, password, clientcode, Two_FA 
+	1. userid and password is your trading account username and password
+	2. clientcode only needed in case of dealer, else always keep
+	   clientcode = None
+	3. Two_FA as per user defined DOB or PAN in str format
+
+4. Set Url
+	Enter Base Url for LIVE or UAT Testing 
+	1. For live 
+	   Base_Url = "https://openapi.motilaloswal.com"
+	2. For UAT
+	   Base_Url = "https://uatopenapi.motilaloswal.com"
+
+5. Initialize MofslOpenApi
+	Initialize MofslOpenApi using Apikey and Base_Url
+
+6. Uncomment print statement to execute
+	Loginrequest will always be first request with each following request 
+		
+	   
+

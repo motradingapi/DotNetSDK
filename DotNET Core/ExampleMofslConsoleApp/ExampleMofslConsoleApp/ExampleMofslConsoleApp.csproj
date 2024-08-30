@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="System.Management" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="MofslOpenApi">
+      <HintPath>..\..\MofslOpenApi\MofslOpenApi\bin\Release\netcoreapp3.1\MofslOpenApi.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
