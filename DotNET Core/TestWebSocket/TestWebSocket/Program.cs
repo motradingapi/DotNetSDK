@@ -28,6 +28,9 @@ namespace TestWebSocket
             //You will get Your api key from website 
             string ApiKey = "";
 
+            //You will get Your api Secret key from website 
+            string apisecretkey = "";
+
             //Username and password is same as your trading account username and password
             string username = "";
             string password = "";
@@ -39,10 +42,10 @@ namespace TestWebSocket
             string BrowserName = "firebox";
             string BrowserVersion = "104.0.2";
             string VENDERINFO = username;
-            // CMOFSLOPENAPI m_objconnect = new CMOFSLOPENAPI(ApiKey, "WEB", BrowserName, BrowserVersion);
-            //  CMOFSLOPENAPI m_objconnect = new CMOFSLOPENAPI(ApiKey, "DESKTOP");
-            //DESKTOP OR WEB (in case web BrowserName, BrowserVersion)
-            CMOFSLWebSocket l_objCMOFSLWebSocket = new CMOFSLWebSocket(ApiKey, "DESKTOP");
+            // CMOFSLOPENAPI m_objconnect = new CMOFSLOPENAPI(ApiKey, "WEB", BrowserName, BrowserVersion, apisecretkey);
+            //  CMOFSLOPENAPI m_objconnect = new CMOFSLOPENAPI(ApiKey, "DESKTOP", apisecretkey);
+            //DESKTOP OR WEB (in case web BrowserName, BrowserVersion, apisecretkey)
+            CMOFSLWebSocket l_objCMOFSLWebSocket = new CMOFSLWebSocket(ApiKey, "DESKTOP", BrowserName, BrowserVersion, apisecretkey);
 
             l_objCMOFSLWebSocket.SetApiUrl(Base_Url);
             Console.WriteLine("ENTER TOTP: ");
@@ -86,7 +89,7 @@ namespace TestWebSocket
             l_objCMOFSLWebSocket.OnClose += L_objCMOFSLWebSocket_OnClose;
             l_objCMOFSLWebSocket.MessageReceived += L_objCMOFSLWebSocket_MessageReceived;
             //Connection Type - TCP or WEB
-            l_objCMOFSLWebSocket.Connect("TCP");
+            l_objCMOFSLWebSocket.Connect("WEB");
             l_objCMOFSLWebSocket.IndexSubscriber("NSE");
             //l_objCMOFSLWebSocket.IndexUnSubscriber("NSE");
             l_objCMOFSLWebSocket.IndexUnSubscriber("BSE");

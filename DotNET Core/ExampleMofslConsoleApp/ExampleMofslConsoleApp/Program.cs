@@ -20,9 +20,10 @@ namespace ExampleMofslConsoleApp
         {
 
             //You will get Your api key from website 
-
-            //You will get Your api key from website 
             string ApiKey = "";
+
+            //You will get Your api Secret key from website 
+            string apisecretkey = "";
 
             //Username and password is same as your trading account username and password
             string username = "";
@@ -33,12 +34,12 @@ namespace ExampleMofslConsoleApp
             string BrowserVersion = "104.0.2";
 
 
-            CMOFSLOPENAPI m_objconnect = new CMOFSLOPENAPI(ApiKey, "web", BrowserName, BrowserVersion);
+            CMOFSLOPENAPI m_objconnect = new CMOFSLOPENAPI(ApiKey, "web", BrowserName, BrowserVersion, apisecretkey);
 
             //in case of Desktop-- CMOFSLOPENAPI m_objconnect = new CMOFSLOPENAPI(ApiKey, "Desktop");
 
             //Enter base url 
-            string Base_Url = "https://openapi.motilaloswal.com";
+            string Base_Url = "https://openapi.motilaloswaluat.com";
 
             m_objconnect.SetApiUrl(Base_Url);
 
@@ -73,6 +74,15 @@ namespace ExampleMofslConsoleApp
             Console.WriteLine(JsonConvert.SerializeObject(m_objlogin));
             Console.WriteLine("------------------------------------------------");
 
+            GetAccessTokenResposne l_objGetAccessTokenResposne = new GetAccessTokenResposne();
+            l_objGetAccessTokenResposne = m_objconnect.GetAccessToken();
+
+
+            //To see the output of Your request
+            Console.WriteLine("------------GetAccessToken Output----------------------------------");
+            Console.WriteLine(JsonConvert.SerializeObject(l_objGetAccessTokenResposne));
+            Console.WriteLine("------------------------------------------------");
+
 
             //In case of Otp take otp from user
             //string read = Console.ReadLine();
@@ -89,37 +99,37 @@ namespace ExampleMofslConsoleApp
 
 
 
-                //ResendOtpResposne l_objResendOtpResposne = new ResendOtpResposne();
-                //l_objResendOtpResposne = m_objconnect.ResendOtp();
+            //ResendOtpResposne l_objResendOtpResposne = new ResendOtpResposne();
+            //l_objResendOtpResposne = m_objconnect.ResendOtp();
 
 
-                //To see the output of Your request
-                //Console.WriteLine("------------Resend Otp Output----------------------------------");
-                //Console.WriteLine(JsonConvert.SerializeObject(l_objResendOtpResposne));
-                //Console.WriteLine("------------------------------------------------");
+            //To see the output of Your request
+            //Console.WriteLine("------------Resend Otp Output----------------------------------");
+            //Console.WriteLine(JsonConvert.SerializeObject(l_objResendOtpResposne));
+            //Console.WriteLine("------------------------------------------------");
 
 
 
 
 
-                //// VerifyotpResponse l_objVerifyotpResponse = new VerifyotpResponse();
-                //l_objVerifyotpResponse = m_objconnect.VerifyOtp("");
+            //// VerifyotpResponse l_objVerifyotpResponse = new VerifyotpResponse();
+            //l_objVerifyotpResponse = m_objconnect.VerifyOtp("");
 
 
-                ////To see the output of Your request
-                //Console.WriteLine("------------VerifyOtp Output----------------------------------");
-                //Console.WriteLine(JsonConvert.SerializeObject(l_objVerifyotpResponse));
-                //Console.WriteLine("------------------------------------------------");
+            ////To see the output of Your request
+            //Console.WriteLine("------------VerifyOtp Output----------------------------------");
+            //Console.WriteLine(JsonConvert.SerializeObject(l_objVerifyotpResponse));
+            //Console.WriteLine("------------------------------------------------");
 
 
-                ////To see the output of Your request
-                //Console.WriteLine("------------PlaceOrder Output----------------------------------");
-                //Console.WriteLine(JsonConvert.SerializeObject(m_objconnect.PlaceOrder(orderinfo)));
-                //Console.WriteLine("-----------------------------------------------------------------");
+            ////To see the output of Your request
+            //Console.WriteLine("------------PlaceOrder Output----------------------------------");
+            //Console.WriteLine(JsonConvert.SerializeObject(m_objconnect.PlaceOrder(orderinfo)));
+            //Console.WriteLine("-----------------------------------------------------------------");
 
 
-                //    To see Your profile
-                GetProfileResponse GetProfile = new GetProfileResponse();
+            //    To see Your profile
+            GetProfileResponse GetProfile = new GetProfileResponse();
                GetProfile = m_objconnect.GetProfile(ClientId);
 
          //   To see the output of Your request

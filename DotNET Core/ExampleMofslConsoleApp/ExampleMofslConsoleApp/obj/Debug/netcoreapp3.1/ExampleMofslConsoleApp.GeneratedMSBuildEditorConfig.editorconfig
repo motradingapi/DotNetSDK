@@ -1,0 +1,8 @@
+is_global = true
+build_property.RootNamespace = ExampleMofslConsoleApp
+build_property.ProjectDir = D:\DEV\SDK_Update\LIVE\DotNetSDK-master\DotNetSDK-master\DotNET Core\ExampleMofslConsoleApp\ExampleMofslConsoleApp\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.CsWinRTUseWindowsUIXamlProjections = false
+build_property.EffectiveAnalysisLevelStyle = 
+build_property.EnableCodeStyleSeverity = 

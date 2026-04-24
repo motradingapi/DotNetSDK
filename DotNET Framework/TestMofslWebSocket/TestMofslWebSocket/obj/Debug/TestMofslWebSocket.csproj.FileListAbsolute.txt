@@ -1,0 +1,14 @@
+D:\DEV\SDK_Update\DEV\DotNetSDK-master\DotNetSDK-master\DotNET Framework\TestMofslWebSocket\TestMofslWebSocket\obj\Debug\TestMofslWebSocket.csproj.AssemblyReference.cache
+D:\DEV\SDK_Update\DEV\DotNetSDK-master\DotNetSDK-master\DotNET Framework\TestMofslWebSocket\TestMofslWebSocket\obj\Debug\TestMofslWebSocket.csproj.CoreCompileInputs.cache
+D:\DEV\SDK_Update\DEV\DotNetSDK-master\DotNetSDK-master\DotNET Framework\TestMofslWebSocket\TestMofslWebSocket\bin\Debug\TestMofslWebSocket.exe.config
+D:\DEV\SDK_Update\DEV\DotNetSDK-master\DotNetSDK-master\DotNET Framework\TestMofslWebSocket\TestMofslWebSocket\bin\Debug\TestMofslWebSocket.exe
+D:\DEV\SDK_Update\DEV\DotNetSDK-master\DotNetSDK-master\DotNET Framework\TestMofslWebSocket\TestMofslWebSocket\bin\Debug\TestMofslWebSocket.pdb
+D:\DEV\SDK_Update\DEV\DotNetSDK-master\DotNetSDK-master\DotNET Framework\TestMofslWebSocket\TestMofslWebSocket\bin\Debug\MofslOpenApi.dll
+D:\DEV\SDK_Update\DEV\DotNetSDK-master\DotNetSDK-master\DotNET Framework\TestMofslWebSocket\TestMofslWebSocket\bin\Debug\Newtonsoft.Json.dll
+D:\DEV\SDK_Update\DEV\DotNetSDK-master\DotNetSDK-master\DotNET Framework\TestMofslWebSocket\TestMofslWebSocket\bin\Debug\Newtonsoft.Json.xml
+D:\DEV\SDK_Update\DEV\DotNetSDK-master\DotNetSDK-master\DotNET Framework\TestMofslWebSocket\TestMofslWebSocket\obj\Debug\TestMofs.499F06F0.Up2Date
+D:\DEV\SDK_Update\DEV\DotNetSDK-master\DotNetSDK-master\DotNET Framework\TestMofslWebSocket\TestMofslWebSocket\obj\Debug\TestMofslWebSocket.exe
+D:\DEV\SDK_Update\DEV\DotNetSDK-master\DotNetSDK-master\DotNET Framework\TestMofslWebSocket\TestMofslWebSocket\obj\Debug\TestMofslWebSocket.pdb
+D:\DEV\SDK_Update\DEV\DotNetSDK-master\DotNetSDK-master\DotNET Framework\TestMofslWebSocket\TestMofslWebSocket\obj\Debug\TestMofslWebSocket.exe.config
+D:\DEV\SDK_Update\DEV\DotNetSDK-master\DotNetSDK-master\DotNET Framework\TestMofslWebSocket\TestMofslWebSocket\bin\Debug\websocket-sharp.dll
+D:\DEV\SDK_Update\DEV\DotNetSDK-master\DotNetSDK-master\DotNET Framework\TestMofslWebSocket\TestMofslWebSocket\bin\Debug\MofslOpenApi.pdb

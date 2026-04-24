@@ -26,6 +26,9 @@ namespace ExampleMofslConsoleAppDealer
             //You will get Your api key from website 
             string ApiKey = "";
 
+            //You will get Your api Secret key from website 
+            string apisecretkey = "";
+
             //Username and password is same as your trading account username and password
             string username = "";
             string password = "";
@@ -37,7 +40,7 @@ namespace ExampleMofslConsoleAppDealer
 
             string BrowserName = "firebox";
             string BrowserVersion = "104.0.2";
-            CMOFSLOPENAPI m_objconnect = new CMOFSLOPENAPI(ApiKey, "web", BrowserName, BrowserVersion);
+            CMOFSLOPENAPI m_objconnect = new CMOFSLOPENAPI(ApiKey, "web", BrowserName, BrowserVersion, apisecretkey);
 
 
             //initialize MofslOpenApi using Apikey
@@ -56,6 +59,15 @@ namespace ExampleMofslConsoleAppDealer
             //To see the output of Your request
             Console.WriteLine("------------Login Output----------------------------------");
             Console.WriteLine(JsonConvert.SerializeObject(m_objlogin));
+            Console.WriteLine("------------------------------------------------");
+
+            GetAccessTokenResposne l_objGetAccessTokenResposne = new GetAccessTokenResposne();
+            l_objGetAccessTokenResposne = m_objconnect.GetAccessToken();
+
+
+            //To see the output of Your request
+            Console.WriteLine("------------GetAccessToken Output----------------------------------");
+            Console.WriteLine(JsonConvert.SerializeObject(l_objGetAccessTokenResposne));
             Console.WriteLine("------------------------------------------------");
 
 
@@ -161,7 +173,7 @@ namespace ExampleMofslConsoleAppDealer
             String f_strdateandtime = "20-Dec-2022 15:16:02";
 
             TradeBookResponse TradeBookResponse = new TradeBookResponse();
-            TradeBookResponse = m_objconnect.GetTradeBook(clientcode, f_strdateandtime);
+            TradeBookResponse = m_objconnect.GetTradeBook(clientcode);
 
             Console.WriteLine("------------ TradeBook Output----------------------------------");
             Console.WriteLine(JsonConvert.SerializeObject(TradeBookResponse));
@@ -271,11 +283,11 @@ namespace ExampleMofslConsoleAppDealer
             Console.WriteLine("-----------------------------------------------------------------");
 
   //This API is used to get Brokerage and Other Charges Detail 
-            string Clientcode = "";//in case of dealer else pass blank
-            string exchangename = "BSE";
-            string series = "EQ";
+            //string Clientcode = "";//in case of dealer else pass blank
+            //string exchangename = "BSE";
+            //string series = "EQ";
 
-            brokeragedetail l_Objbrokeragedetail = new brokeragedetail();
+            //brokeragedetail l_Objbrokeragedetail = new brokeragedetail();
 
             l_Objbrokeragedetail = m_objconnect.Getbrokeragedeatil(Clientcode, exchangename, series);
 

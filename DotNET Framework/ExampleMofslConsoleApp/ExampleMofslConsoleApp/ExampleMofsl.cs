@@ -26,13 +26,16 @@ namespace ExampleMofslConsoleApp
 
             //You will get Your api key from website 
 
+            //You will get Your api Secret key from website 
+            string apisecretkey = "";
+
 
             string SourceId = "Web"; //Web Or Desktop --
                                      //if Your SourceId is web then pass browsername and browser version in case of Desktop you dont need to passanyting
 
             string BrowserName = "firebox";
             string BrowserVersion = "104.0.2";
-            CMOFSLOPENAPI m_objconnect = new CMOFSLOPENAPI(ApiKey, "web", BrowserName, BrowserVersion);
+            CMOFSLOPENAPI m_objconnect = new CMOFSLOPENAPI(ApiKey, "web", BrowserName, BrowserVersion, apisecretkey);
 
             //in case of Desktop-- CMOFSLOPENAPI m_objconnect = new CMOFSLOPENAPI(ApiKey, "Desktop");
 
@@ -47,6 +50,7 @@ namespace ExampleMofslConsoleApp
             string username = "";
             string password = "";
             string PanNoOrDob = ""; //client PAN no or Date of Birth --18/10/1998
+
             string vendorinfo = username;
             //Login by Clientcode and password
             /*
@@ -72,6 +76,15 @@ namespace ExampleMofslConsoleApp
             //To see the output of Your request
             Console.WriteLine("------------Login Output----------------------------------");
             Console.WriteLine(JsonConvert.SerializeObject(m_objlogin));
+            Console.WriteLine("------------------------------------------------");
+
+            GetAccessTokenResposne l_objGetAccessTokenResposne = new GetAccessTokenResposne();
+            l_objGetAccessTokenResposne = m_objconnect.GetAccessToken();
+
+
+            //To see the output of Your request
+            Console.WriteLine("------------GetAccessToken Output----------------------------------");
+            Console.WriteLine(JsonConvert.SerializeObject(l_objGetAccessTokenResposne));
             Console.WriteLine("------------------------------------------------");
 
 

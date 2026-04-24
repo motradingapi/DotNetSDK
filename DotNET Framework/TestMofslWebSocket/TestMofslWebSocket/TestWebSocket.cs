@@ -22,12 +22,17 @@ namespace TestMofslWebSocket
 {
     class TestWebSocket
     {
-        public static CMOFSLWebSocket socket = new CMOFSLWebSocket();
+        //public static CMOFSLWebSocket socket = new CMOFSLWebSocket();
+
+        public static CMOFSLWebSocket socket ;
 
         static void Main(string[] args)
         {
             //You will get Your api key from website 
             string ApiKey = "";
+
+            //You will get Your api Secret key from website 
+            string apisecretkey = "";
 
             //Username and password is same as your trading account username and password
             string username = "";
@@ -42,16 +47,16 @@ namespace TestMofslWebSocket
 
             string VENDERINFO = username;
             // CMOFSLOPENAPI m_objconnect = new CMOFSLOPENAPI(ApiKey, "WEB", BrowserName, BrowserVersion);
-            CMOFSLOPENAPI m_objconnect = new CMOFSLOPENAPI(ApiKey, "DESKTOP");
+            //CMOFSLOPENAPI m_objconnect = new CMOFSLOPENAPI(ApiKey, "DESKTOP", BrowserName, BrowserVersion, apisecretkey);
 
+            socket = new CMOFSLWebSocket(ApiKey, "DESKTOP", BrowserName, BrowserVersion, apisecretkey);
 
-
-            m_objconnect.SetApiUrl(Base_Url);   
+            socket.SetApiUrl(Base_Url);   
 
             string TOTP = "";
             //Login by Clientcode and password
             loginResponse m_objlogin = new loginResponse();
-            m_objlogin = m_objconnect.login(username, password, PanNoOrDob, VENDERINFO, TOTP);
+            m_objlogin = socket.login(username, password, PanNoOrDob, VENDERINFO, TOTP);
 
             //To see the output of Your request
             Console.WriteLine("------------Login Output----------------------------------");
@@ -62,8 +67,8 @@ namespace TestMofslWebSocket
 
             Thread l_threadMarketwatch = new Thread(Marketwatch);
             Thread l_threadtrade = new Thread(trade);
-            //l_threadMarketwatch.Start();
-               l_threadtrade.Start();
+            l_threadMarketwatch.Start();
+            //l_threadtrade.Start();
             Console.ReadLine();
         }
 
@@ -77,7 +82,7 @@ namespace TestMofslWebSocket
 
             socket.connect();
      //Single Scrip Register
-     //  socket.Register("BSE", "CASH", 532540);
+     socket.Register("BSE", "CASH", 532540);
      //   socket.UnRegister("BSE", "CASH", 532540);
 
 
@@ -120,15 +125,15 @@ namespace TestMofslWebSocket
         public static void trade()
         {
           
-                CMOFSLWebSocket socket = new CMOFSLWebSocket();
+                //CMOFSLWebSocket socket = new CMOFSLWebSocket();
                 socket.TradeMessageReceived += Socket_TradeMessageReceived;
                 socket.TradeOnClose += Socket_TradeOnClose;
 
                 socket.Tradelogin();
-                //  socket.OrderSubscribe();
+                socket.OrderSubscribe();
                 //socket.OrderUnsubscribe();
                 socket.TradeSubscribe();
-                socket.Tradelogout();
+                //socket.Tradelogout();
          
             //socket.TradeUnsubscribe();
             //socket.Tradelogout();

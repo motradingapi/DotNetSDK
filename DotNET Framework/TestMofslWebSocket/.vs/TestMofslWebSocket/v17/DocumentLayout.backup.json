@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\DEV\\SDK_Update\\DEV\\DotNetSDK-master\\DotNetSDK-master\\DotNET Framework\\TestMofslWebSocket\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B3F6EFBF-AA3E-4687-B2FC-361C94DDC76B}|TestMofslWebSocket\\TestMofslWebSocket.csproj|d:\\dev\\sdk_update\\dev\\dotnetsdk-master\\dotnetsdk-master\\dotnet framework\\testmofslwebsocket\\testmofslwebsocket\\testwebsocket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3F6EFBF-AA3E-4687-B2FC-361C94DDC76B}|TestMofslWebSocket\\TestMofslWebSocket.csproj|solutionrelative:testmofslwebsocket\\testwebsocket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TestWebSocket.cs",
+              "DocumentMoniker": "D:\\DEV\\SDK_Update\\DEV\\DotNetSDK-master\\DotNetSDK-master\\DotNET Framework\\TestMofslWebSocket\\TestMofslWebSocket\\TestWebSocket.cs",
+              "RelativeDocumentMoniker": "TestMofslWebSocket\\TestWebSocket.cs",
+              "ToolTip": "D:\\DEV\\SDK_Update\\DEV\\DotNetSDK-master\\DotNetSDK-master\\DotNET Framework\\TestMofslWebSocket\\TestMofslWebSocket\\TestWebSocket.cs",
+              "RelativeToolTip": "TestMofslWebSocket\\TestWebSocket.cs",
+              "ViewState": "AgIAAJAAAACAZmZmZmYfwJoAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-22T09:45:09.778Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

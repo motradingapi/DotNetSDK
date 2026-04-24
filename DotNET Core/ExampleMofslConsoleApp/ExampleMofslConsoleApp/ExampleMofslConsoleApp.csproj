@@ -12,7 +12,7 @@
 
   <ItemGroup>
     <Reference Include="MofslOpenApi">
-      <HintPath>..\..\MofslOpenApi\MofslOpenApi\bin\Release\netcoreapp3.1\MofslOpenApi.dll</HintPath>
+      <HintPath>..\..\DLL\MofslOpenApi.dll</HintPath>
     </Reference>
   </ItemGroup>
 
